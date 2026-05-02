@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NetVantage AI | Ultra-Long Range Signal Optimizer</title>
+  <meta name="description" content="Advanced AI-driven network optimization system for high-speed internet and long-distance signal amplification.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <div class="glass-overlay"></div>
+  <header>
+  <div class="logo">
+  <span class="pulse-icon"></span>
+  <h1>NETVANTAGE <span class="ai-text">AI</span></h1>
+  </div>
+  <nav>
+  <div class="network-info" id="network-info">
+  <span class="label">DETECTED NETWORK:</span>
+  <span class="value" id="current-network">SCANNING...</span>
+  </div>
+  <div class="status-badge">
+  <span class="status-dot"></span> SYSTEM ACTIVE
+  </div>
+  <button class="reboot-btn" id="reboot-btn" title="Restart System">
+  <span class="icon">REBOOT_ICON</span> REBOOT
+  </button>
+  </nav>
+  </header>
+  <main>
+  <section class="hero-section">
+  <div class="main-gauge-container">
+  <div class="gauge-ring">
+  <div class="gauge-value" id="signal-strength">84%</div>
+  <div class="gauge-label">SIGNAL STRENGTH</div>
+  <svg class="progress-ring" width="240" height="240">
+  <circle class="progress-ring__circle" stroke="#00f2ff" stroke-width="8" fill="transparent" r="100" cx="120" cy="120"/>
+  </svg>
+  </div>
+  </div>
+  <div class="stats-grid">
+  <div class="stat-card">
+  <label>DOWNLOAD SPEED</label>
+  <div class="value" id="download-speed">450.2 <small>Mbps</small></div>
+  <div class="trend up">+12.4%</div>
+  </div>
+  <div class="stat-card">
+  <label>LATENCY (PING)</label>
+  <div class="value" id="latency">9 <small>ms</small></div>
+  <div class="trend down">-2.1%</div>
+  </div>
+  <div class="stat-card">
+  <label>DISTANCE TO HUB</label>
+  <div class="value" id="range">1.2 <small>km</small></div>
+  <div class="trend" id="distance-status">CALIBRATING...</div>
+  </div>
+  </div>
+  </section>
+  <section class="control-panel">
+  <div class="panel-header">
+  <h2>ADVANCED CONTROL HUB</h2>
+  <div class="turbo-container">
+  <label class="switch">
+  <input type="checkbox" id="turbo-toggle">
+  <span class="slider round"></span>
+  </label>
+  <span class="turbo-text">ULTRA-TURBO MODE</span>
+  </div>
+  </div>
+  <div class="actions-grid">
+  <button class="action-btn" id="boost-btn">
+  <div class="icon">BOOST_ICON</div>
+  <div class="btn-content">
+  <strong>AMPLIFY SIGNAL</strong>
+  <span>Boost signal amplitude by 40%</span>
+  </div>
+  </button>
+  <button class="action-btn" id="tunnel-btn">
+  <div class="icon">TUNNEL_ICON</div>
+  <div class="btn-content">
+  <strong>QUANTUM TUNNELING</strong>
+<span>Reduce packet loss over distance</span>
+  </div>
+  </button>
+  <button class="action-btn" id="dns-btn">
+<div class="icon">DNS_ICON</div>
+  <div class="btn-content">
+  <strong>OPTIMIZE DNS</strong>
+  <span>Fastest path routing active</span>
+  </div>
+</button>
+  </div>
+  </section>
+  <section class="pro-tools">
+  <div class="tools-card">
+  <h3>REAL-WORLD OPTIMIZATION</h3>
+  <p>Apply these settings to your device for hardware-level boosting:</p>
+  <div class="settings-list">
+  <div class="setting-item">
+  <span>DNS 1:</span> <code class="copy-code">1.1.1.1</code>
+  </div>
+  <div class="setting-item">
+  <span>DNS 2:</span> <code class="copy-code">8.8.8.8.8</code>
+  </div>
+  <div class="setting-item">
+  <span>MTU:</span> <code class="copy-code">1500 (AUTO)</code>
+  </div>
+  </div>
+  <div class="health-indicator">
+  <div class="health-bar">
+  <div class="health-fill" id="health-fill"></div>
+  </div>
+  <span class="health-label">SYSTEM HEALTH: OPTIMIZED</span>
+</div>
+<div class="integrity-badge" id="integrity-panel">
+  <div class="integrity-icon">SHIELD_ICON</div>
+<div class="integrity-info">
+  <label>LINK INTEGRITY</label>
+  <div class="integrity-value" id="integrity-value">99.9%</div>
+  </div>
+  </div>
+  </div>
+  <div class="tools-card media-boost">
+  <h3>MEDIA ACCELERATOR</h3>
+  <p>Optimizing packet priority for YouTube & Streaming Medias:</p>
+  <div class="media-controls">
+  <button class="mini-btn active" id="stream-boost-btn">ENABLE VIDEO PRIORITY</button>
+  <div class="buffer-indicator">
+  <div class="buffer-dot"></div>
+  <span id="buffer-status">STREAMING OPTIMIZED</span>
+  </div>
+  </div>
+  </div>
+  <div class="tools-card sharing-center">
+  <h3>MULTI-DEVICE SYNC</h3>
+  <p>Scan this QR code to access NetVantage AI on other devices (Phone/Tablet):</p>
+<div class="share-flex">
+<div class="qr-container">
+<img id="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=SYSTEM_INITIALIZING">
+</div>
+<div class="share-details">
+<div class="link-box">
+<span id="local-ip-display">Detecting Local IP...</span>
+  <button class="mini-btn" id="copy-link-btn">COPY LINK</button>
+  </div>
+  <p class="share-hint">Note: Devices must be on the same Wi-Fi network.</p>
+  <div class="cloud-promo">
+  <span class="icon">CLOUD_ICON</span>
+  <span>Want a permanent link? Use <strong>GitHub Pages</strong> or <strong>Vercel</strong>.</span>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
+  <section class="visualization">
+  <div class="data-stream">
+  <h3>SYSTEM LOGS</h3>
+  <div id="log-container" class="log-content">
+  <p class="log-entry">Initializing NetVantage AI Core...</p>
+  <p class="log-entry">Scanning for nearby base stations...</p>
+  <p class="log-entry">Signal strength detected: 84%</p>
+  </div>
+  </div>
+  <div class="wave-visualizer">
+  <canvas id="wave-canvas"></canvas>
+  <div class="wave-label">LIVE FREQUENCY ANALYSIS</div>
+  </div>
+  </section>
+  </main>
+  <div class="optimization-overlay" id="opt-overlay">
+  <div class="opt-content">
+  <div class="loader"></div>
+  <h3>OPTIMIZING SIGNAL...</h3>
+  <p id="opt-status">Aligning signal phases...</p>
+  </div>
+  </div>
+  <script src="script.js"></script>
+  </body>
+  </html>
